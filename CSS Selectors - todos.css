@@ -1,0 +1,15 @@
+li {
+	border: 2px solid red;
+}
+
+/*Using ID for third <li>
+IDs use #*/
+#special {
+	background: yellow
+}
+
+/*Using class for first and second <li>
+Classes use .*/
+.completed {
+	text-decoration: line-through;
+}

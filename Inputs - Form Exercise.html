@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<h1>Register</h1>
+		<form>
+			<!-- First and Last Name -->
+			<label for="FirstName">First Name:</label>
+			<input name="Register" id="FirstName" type="text"  placeholder="First Name" required>
+
+			<label for="LastName">Last Name:</label>
+			<input name="Register" id="LastName" type="text" placeholder="Last Name" required>
+
+			
+			<!-- Gender -->
+			<div>
+			<label for ="Male">Male</label>
+			<input type="radio" id="Male" name="GenderSelect" value="Male">
+
+			<label for ="Female">Female</label>
+			<input type="radio" id="Female" name="GenderSelect" value="Female">
+
+			<label for ="Other">Other</label>
+			<input type="radio" id="Other" name="GenderSelect" value="Other">
+			</div>
+
+			<!-- Email -->
+			<label for="Email">Email</label>
+			<input type="email" id="Email" placeholder="Your e-mail" required>	
+
+			<!-- Password -->
+			<label for="Password">Password</label>
+			<input type="password" id="Password" placeholder="Your password" pattern=".{5,10}" required title="5 to 10 characters required">
+
+			<!-- Birthday -->
+			<div>
+			<label>Month</label>
+			<select name="Month">
+				<option value="0" selected disabled>Month</option>
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+				<option>May</option>
+			</select>
+
+			<label>Day</label>
+			<select name="Day">
+				<option value="0" selected disabled>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+
+			<label>Year</label>
+			<select name="Year">
+				<option value="0" selected disabled>Year</option>
+				<option>2015</option>
+				<option>2016</option>
+				<option>2017</option>
+				<option>2018</option>
+				<option>2019</option>
+			</select>
+			</div>
+
+			<!-- Terms and Conditions -->
+			<label for="Terms">I agree to the terms and conditions</label>
+			<input type="checkbox" name="Terms" id="Terms" required>
+
+			<div>
+			<input type="Submit">
+			</div>
+		</form>
+
+
+</body>
+</html>
